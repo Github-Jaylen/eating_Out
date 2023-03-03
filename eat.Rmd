@@ -53,6 +53,17 @@ table1 <- xtabs(~race + eatout, data=mydata)
 rowPerc(table1)
 colPerc(table1)
 ```
-
+  
 According to this numerical data white people eat out more than black or other people, however black and other people eat ut at a similar but rate but with a wider margin than the bar graph showed. 
+
+
+
+
+
+
+```{r}
+fisherXY(mydata$race,mydata$eatout, printAll = TRUE)
+```
+
+
 
