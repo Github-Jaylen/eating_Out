@@ -46,3 +46,13 @@ barchartGC(~race + eatout,data=mydata, type="percent")
 This bar graph shows that white people eat out more than both black and other people, however black and other people eat out at a similar number. 
 
 
+
+
+```{r}
+table1 <- xtabs(~race + eatout, data=mydata)
+rowPerc(table1)
+colPerc(table1)
+```
+
+According to this numerical data white people eat out more than black or other people, however black and other people eat ut at a similar but rate but with a wider margin than the bar graph showed. 
+
